@@ -74,7 +74,7 @@ function sub(){
     }
     else if(codetext==codemo)
     {
-        window.open("index.html",'target=_self')
+    window.open("../../index.html",'target=blank')
     }
     else
     {
@@ -84,7 +84,7 @@ function sub(){
 }
 function login()
 {
-    window.open("index.html",'target=_self')
+    window.open("../../index.html",'target=blank')
     
 }
 
