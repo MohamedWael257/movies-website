@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="assests/css/movies.css">    <link rel="stylesheet" href="assests/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+         <img src="img/Ejad.jpg" alt="Logo" draggable="false">
+    </div>
+    <span  class="navbar" >
+      <button class="nav-btn"><ion-icon name="menu-outline"></ion-icon></button>
+      <div id="showw" class="nav-menu">
+        <a href="">Home</a>
+        <span class="dropdownn"onmouseleave="hide()" onmousemove="show()">
+          <a class="befor">Content</a>
+          <div class="dropdownn-menu">
+              <a href="Contents/movies/Actions/Actions.html">Action</a>
+              <a href="Contents/movies/Comdey/Comdey.html">Comedy</a>
+              <a href="Contents/movies/Drama/Drama.html">Drama</a>
+              <a href="Contents/movies/Horror/Horror.html">Horror</a>
+              <a href="Contents/movies/Fantasy/Fantasy.html">Fantasy</a>
+              <a href="Contents/movies/Romance/Romance.html">Romance</a>
+          </div>
+          </span>
+        <a><button id="move" class="move" onclick="scrollWin()">Services</button></a>
+        <a href="">Blog</a>
+        <a><button  onclick="scrollWin2()">Contact US</button></a>
+        <a href="">About</a>
+        <a href="Account.html">Signin</a>
+    </div>
+      </span>
+    <nav>
+        <a href="">Home</a>
+        <span class="dropdown">
+        <a href="">Content</a>
+        <div class="dropdown-menu">
+            <a href="Contents/movies/Actions/Actions.html">Action</a>
+            <a href="Contents/movies/Comdey/Comdey.html">Comedy</a>
+            <a href="Contents/movies/Drama/Drama.html">Drama</a>
+            <a href="Contents/movies/Horror/Horror.html">Horror</a>
+            <a href="Contents/movies/Fantasy/Fantasy.html">Fantasy</a>
+            <a href="Contents/movies/Romance/Romance.html">Romance</a>
+        </div>
+        </span>
+        <a href="#service">Services</a>
+        <a href="">Blog</a>
+        <a href="#ContactUS">Contact Us</a>
+        <a href="">About</a>
+        <a href="Account.html"><button class="Signin">Sign in</button></a>
+    </nav>
+    <!-- <button class="search-btn"> 
+      <ion-icon name="search-outline"></ion-icon>
+    </button> -->
+    <!-- <div class="lang-wrapper">
+      <label for="language">
+        <ion-icon name="globe-outline" role="img" class="md hydrated" aria-label="globe outline"></ion-icon>
+      </label>
+  
+      <select name="language" id="language">
+        <option value="en">EN</option>
+        <option value="au">AU</option>
+        <option value="ar">AR</option>
+        <option value="tu">TU</option>
+      </select>
+    </div> -->
+  </header>
+ <!-- ///////////////////end header////////////// -->
+ <div class="home">
+  <div class="home-images">
+    <div class="mySlides fade">
+      <img src="img/movies.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/movies1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/movies2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/movies3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/movies4.jpeg" style="width:100%">
+      </div>
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span> 
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>      
+    </div>
+</div>
+<!-- ///////////////////end home////// -->
+<div class="movies-slider">
+  <div class="heading">
+    <h5>ONLINE STREAMING</h5>
+    <h1>Upcoming Movies</h1>
+  </div>
+  <div class="countdown" id="demo">
+    <div class="time">
+    <h2 class="days"></h2>
+    <small>Days</small>
+  </div>
+  <div class="time">
+    <h2 class="hours"></h2>
+    <small>Hrs</small>
+  </div>
+  <div class="time">
+    <h2 class="minutes"></h2>
+    <small>Mins</small>
+  </div>
+  <div class="time">
+    <h2 class="seconds"></h2>
+    <small>Secs</small>
+  </div>
+</div>
+  <button class='flt-leftt' onclick="slideRight(this);"><ion-icon  name="chevron-back-outline"></ion-icon></button>
+  <div class="row flt-left">
+    <div class="row-container">
+      <div class="container">
+        <!-- <div class="row-data">
+          <span id="row-title"><h1>Free Guy</h1></span>
+          <a href="Contents/movies/free guy.html" id="row-play"><ion-icon name="play-outline"></ion-icon></a>           
+        </div> -->
+        <a href="Contents/movies/free guy.html"target="_blank">
+          <img id="dd" src="img/upcoming-1.png" height="200" width="230" />
+        </a> 
+      </div>
+      <div class="container">
+        <!-- <div class="row-data">
+          <span id="row-title"><h1>Alita Bat</h1></span>
+          <a href="Contents/movies/Alita Battle Angel.html" id="row-play"><ion-icon name="play-outline"></ion-icon></a>            
+        </div>   -->
+        <a href="Contents/games/Grand Theft Auto V.html"target="_blank">
+          <img id="dd" src="img/upcoming-2.png" height="200" width="230" />
+        </a>    
+      </div>
+      <div class="container">
+        <a href="Contents/games/Tomb Raider.html"target="_blank">
+          <img id="dd" src="img/upcoming-3.png" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Assassin’s Creed Origins.html"target="_blank">
+          <img id="dd" src="img/upcoming-4.png" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Nba 2k23.html"target="_blank">
+          <img id="dd" src="img/Baywatch.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Fifa23.html"target="_blank">
+          <img id="dd" src="img/Black Adam 2022.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Pes 23.html"target="_blank">
+          <img id="dd" src="img/Black Panther.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="row-container2">
+      <div class="container">
+        <a href="Contents/movies/free guy.html"target="_blank">
+          <img id="dd" src="img/Aquaman 2018.jpg" height="200" width="230" />
+        </a> 
+      </div>
+      <div class="container">
+        <a href="Contents/games/Grand Theft Auto V.html"target="_blank">
+          <img id="dd" src="img/free guy.jpg" height="200" width="230" />
+        </a>    
+      </div>
+      <div class="container">
+        <a href="Contents/games/Tomb Raider.html"target="_blank">
+          <img id="dd" src="img/upcoming-1.png" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Assassin’s Creed Origins.html"target="_blank">
+          <img id="dd" src="img/upcoming-2.png" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Nba 2k23.html"target="_blank">
+          <img id="dd" src="img/Baywatch.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Fifa23.html"target="_blank">
+          <img id="dd" src="img/upcoming-4.png" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Pes 23.html"target="_blank">
+          <img id="dd" src="img/upcoming-3.png" height="200" width="230" />
+        </a>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="row-container3">
+      <div class="container">
+        <a href="Contents/movies/free guy.html"target="_blank">
+          <img id="dd" src="img/Bloodshot.jpg" height="200" width="230" />
+        </a> 
+      </div>
+      <div class="container">
+        <a href="Contents/games/Grand Theft Auto V.html"target="_blank">
+          <img id="dd" src="img/As all gods will.jpg" height="200" width="230" />
+        </a>    
+      </div>
+      <div class="container">
+        <a href="Contents/games/Tomb Raider.html"target="_blank">
+          <img id="dd" src="img/ninja shadow of tear.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Assassin’s Creed Origins.html"target="_blank">
+          <img id="dd" src="img/need-for-speed.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Nba 2k23.html"target="_blank">
+          <img id="dd" src="img/expendables_three.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Fifa23.html"target="_blank">
+          <img id="dd" src="img/War craft.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Pes 23.html"target="_blank">
+          <img id="dd" src="img/Warm.Bodies.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="row-container4">
+      <div class="container">
+        <a href="Contents/movies/free guy.html"target="_blank">
+          <img id="dd" src="img/Jack the Giant Slayer.jpg" height="200" width="230" />
+        </a> 
+      </div>
+      <div class="container">
+        <a href="Contents/games/Grand Theft Auto V.html"target="_blank">
+          <img id="dd" src="img/realsteel.jpeg" height="200" width="230" />
+        </a>    
+      </div>
+      <div class="container">
+        <a href="Contents/games/Tomb Raider.html"target="_blank">
+          <img id="dd" src="img/Resident  evil.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Assassin’s Creed Origins.html"target="_blank">
+          <img id="dd" src="img/upcoming-2.png" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Nba 2k23.html"target="_blank">
+          <img id="dd" src="img/Baywatch.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Fifa23.html"target="_blank">
+          <img id="dd" src="img/Black.Sea.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="container">
+        <a href="Contents/games/Pes 23.html"target="_blank">
+          <img id="dd" src="img/Blood and Bone.jpg" height="200" width="230" />
+        </a>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <button class='flt-leftt'   onclick="slideLeft(this);"><ion-icon name="chevron-back-outline"></ion-icon></button>
+  <div class="clear"></div>
+</div>
+<!-- //////////////end slider/////////// -->
+<section class="service">
+  <div class="contair">
+
+    <div class="service-banner">
+      <figure>
+        <img src="img/service-banner.jpg" alt="HD 4k resolution! only $3.99">
+      </figure>
+
+      <a href="img/service-banner.jpg" download class="service-btn">
+        <span>Download</span>
+
+        <ion-icon name="download-outline"></ion-icon>
+      </a>
+    </div>
+
+    <div class="service-content">
+
+      <p class="service-subtitle">Our Services</p>
+
+      <h2 class="h2 service-title">Download Your Shows Watch Offline.</h2>
+
+      <p class="service-text">
+        Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many variations of
+        passages of lorem
+        Ipsum available, but the majority have suffered alteration in some injected humour.
+      </p>
+
+      <ul class="service-list">
+
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <ion-icon name="tv"></ion-icon>
+            </div>
+
+            <div class="card-content">
+              <h3 class="h3 card-title">Enjoy on Your TV.</h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <div class="card-icon">
+              <ion-icon name="videocam"></ion-icon>
+            </div>
+
+            <div class="card-content">
+              <h3 class="h3 card-title">Watch Everywhere.</h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+<!-- //////////////end services/////////////-->
+<section >
+  <div class="heading">
+    <h5>ONLINE STREAMING</h5>
+    <h1>Top Rated Movies</h1>
+  </div>
+  <div class="section-buttons">
+  <a class="section-bttn" href="Contents/movies/Actions.html">Action</a>
+  <a class="section-bttn" href="Contents/movies/Comdey.html">Comedy</a>
+  <a class="section-bttn" href="Contents/movies/Drama.html">Drama</a>
+  <a class="section-bttn" href="Contents/movies/Romance.html">Romance</a>
+  <a class="section-bttn" href="Contents/movies/Horror.html">Horror</a>
+  <a class="section-bttn" href="Contents/movies/Fantasy.html">Fantasy</a>
+  </div>
+  <div class="movies">
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/free guy.html">
+          <img src="img/free guy.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+        <a href="Contents/movies/free guy.html"style="margin-right: 46%;">Free Guy</a>
+        <year>2021</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>7.7<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/baywatch.html">
+          <img src="img/Baywatch.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+        <a href="Contents/movies/free guy.html"style="margin-right: 38%;">BayWatch</a>
+        <year>2020</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>8.2<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/alita battle angel.html">
+          <img src="img/Alita Battle Angel.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+        <a href="Contents/movies/free guy.html"style="margin-right: 14%;">Alita Battle Angel</a>
+        <year>2021</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>7.7<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/as all gods will.html">
+          <img src="img/As all gods will.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+        <a href="Contents/movies/free guy.html" style="margin-right: 24%;">As all gods will</a>
+        <year>2021</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>7.7<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/black panther.html">
+          <img src="img/Black Panther.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+        <a href="Contents/movies/free guy.html" style="margin-right: 27%;">Black Panther</a>
+        <year>2021</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>7.7<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/doctor strange.html">
+          <img src="img/doctor strange.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+        <a href="Contents/movies/free guy.html" style="margin-right: 23%;">Doctor Strange</a>
+        <year>2021</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>7.7<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/resdient evil.html">
+          <img src="img/Resident  evil.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+        <a href="Contents/movies/free guy.html" style="margin-right: 32%;" >Resident Evil</a>
+        <year>2021</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>7.7<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="movie-image">
+        <a href="Contents/movies/ghost raider.html">
+          <img src="img/ghost raider.jpg" alt="">
+        </a>
+      </div>
+      <div class="movie-info">
+        <div class="movie-title-year">
+          <a href="Contents/movies/free guy.html" style="margin-right: 31%;" >Ghost Raider</a>
+          <year>2021</year>
+        </div>
+        <div class="movie-details">
+        <span>4K</span>
+        <time><ion-icon style="color: hsl(57, 97%, 45%);" name="time-outline"></ion-icon>115 min</time>
+        <star>7.7<ion-icon style="color: hsl(57, 97%, 45%);" name="star"></ion-icon></star>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ////////////////////end section///////////////// -->
+<section class="cta">
+  <div class="cont">
+
+    <div class="title-wrapper">
+      <h2 class="cta-title">Trial start first 30 days.</h2>
+
+      <p class="cta-text">
+        Enter your email to create or restart your membership.
+      </p>
+    </div>
+
+    <form action="" class="cta-form">
+      <input type="email" name="email" required placeholder="Enter your email" class="email-field">
+
+      <button type="submit" class="cta-form-btn">Get started</button>
+    </form>
+
+  </div>
+</section>
+<!-- ////////////////////end cta//////////////////// -->
+<section class="cards contact" id="contact">
+  <h2 class="title">Let's work together</h2>
+  <div class="content">
+      <div class="card">
+          <div class="icon">
+              <i class="fas fa-phone"></i>
+          </div>
+          <div class="info">
+              <h3>Phone</h3>
+              <p>+0201010055884</p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="icon">
+              <i class="fas fa-envelope"></i>
+          </div>
+          <div class="info">
+              <h3>Email</h3>
+              <p>mohamedwael4553@gmail.com</p>
+          </div>
+      </div>
+  </div>
+</section> 
+<!-- ////////////////end contact us///////////////////// -->
+<footer class="footer">
+
+  <div class="footer-top">
+    <div class="containeer">
+
+      <div class="footer-brand-wrapper">
+
+        <a href="./index.html" class="logo">
+          <img src="img/logo.svg" alt="Filmlane logo">
+        </a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="./index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Movie</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">TV Show</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Series</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="quicklink-wrapper">
+
+        <ul class="quicklink-list">
+
+          <li>
+            <a href="#" class="quicklink-link">Faq</a>
+          </li>
+
+          <li>
+            <a href="#" class="quicklink-link">Help center</a>
+          </li>
+
+          <li>
+            <a href="#" class="quicklink-link">Terms of use</a>
+          </li>
+
+          <li>
+            <a href="#" class="quicklink-link">Privacy</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="containerr">
+
+      <p class="copyright">
+        &copy; 2022 <a href="#" style="color:hsl(57, 97%, 45%);">codewithsadee</a>. All Rights Reserved
+      </p>
+
+      <img src="img/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+
+    </div>
+  </div>
+</footer>
+<!-- ////////////////end footer///////////////// -->
+<a href="#top" class="go-top" data-go-top>
+  <ion-icon name="chevron-up"></ion-icon>
+</a> 
+<script src="assests/js/movies.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
