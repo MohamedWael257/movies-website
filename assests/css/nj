@@ -1,0 +1,62 @@
+section{
+    background-image: url(../img/top-rated-bg.jpg);
+    background-size: cover;
+    padding:10x;
+}
+section .heading{
+    text-align: center;
+    color: hsl(57, 97%, 45%);
+    margin-bottom: 35px;
+}
+section .heading h5{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+section .movies{
+    /* background-color: aliceblue; */
+    width: 100%;
+    display: flex;
+    /* justify-content:space-between; */
+    /* justify-content: space-between; */
+    /* background-color: black; */
+}
+.movies .movie-card{
+    margin: 0% 2%;
+    width: 20%;
+    /* height: 100%; */
+}
+.movie-card .movie-image{
+    width: 100%;
+}
+.movie-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.movie-title-year,.movie-details{
+    /* color:white; */
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.movie-title-year a{
+    color:white;
+    margin-right: 46%;
+}
+.movie-title-year year {
+    color:hsl(57, 97%, 45%);
+}
+.movie-details span{
+    color: hsl(57, 97%, 45%);
+    font-size: 1em;
+    border: 2px solid white;
+    padding: 0px 10px;    
+}
+.movie-details time{
+    font-size: 1em;
+    color: white;
+    margin-left: 10%;
+}
+.movie-details star {
+    font-size: 1em;
+    color: white;
+    margin-left: 13%;
+}
