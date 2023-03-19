@@ -37,14 +37,8 @@ register_btn.addEventListener('click',function(e){
     e.preventDefault();
     if(username.value==="" ||email.value==="" || password.value==="")
     {
-//        alert("Please Fill The Data")
-         localStorage.setItem('username',username.value);
-        localStorage.setItem('email',email.value);    
-        localStorage.setItem('password',password.value);
-        wrapper.classList.add('active-otopup');
-        var emailtext=document.getElementsByName("otpcode")[0].value;
-        var emailotp=document.getElementById("otpmessage");
-        emailotp.innerText+=emailtext;
+    alert("Please Fill The Data");
+      
     }
     else
     {
