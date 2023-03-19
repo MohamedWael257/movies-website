@@ -12,17 +12,6 @@ registerlink.addEventListener('click',()=>
 });
 loginlink.addEventListener('click',()=>
 {
-    // var exist= prompt("If you already have an email .Please Write your email")
-    // var emaillogg=document.getElementsByName("ee")[0];
-    // if(exist!="")
-    // {
-    //     wrapper.classList.remove('active');
-    //     emaillogg.value=exist;
-    // }
-    // else
-    // {
-    //     alert("Try Again")
-    // }
     wrapper.classList.remove('active');
     var emailtext=document.getElementsByName("otpcode")[0].value;
     var emaillogg=document.getElementsByName("ee")[0];
@@ -77,16 +66,18 @@ register_btn.addEventListener('click',function(e){
 });
 ///////////////////localstorage data of login //////////////////////////
 let login_btn=document.querySelector("#login_btn");
-let getemail=localStorage.getItem("email")
-let getpassword=localStorage.getItem("password")
+let emaill=document.querySelector("#emaill");
+let passwordd=document.querySelector("#passwordd");
+let getemail=localStorage.getItem("email");
+let getpassword=localStorage.getItem("password");
 login_btn.addEventListener('click',function(){
     // e.preventDefault();
-    if(email.value==="" || password.value==="")
+    if(emaill.value==="" || passwordd.value==="")
     {
         alert("Please Fill The Data")
     }
-    else if(getemail && getemail.trim()===email.value.trim()&&
-        getpassword &&getpassword===password.value)
+    else if(getemail && getemail.trim()===emaill.value.trim()&&
+        getpassword &&getpassword===passwordd.value)
     {
         window.location="index.html";
     }
