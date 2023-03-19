@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="assests/css/Account.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body background="img/background.jpg">
+<header>
+        <div class="logo">
+             <img src="img/Ejad.jpg" alt="Logo" draggable="false">
+        </div>
+        <span  class="navbar" >
+          <button class="nav-btn"><ion-icon name="menu-outline"></ion-icon></button>
+          <div id="showw" class="nav-menu">
+            <a href="index.html">Home</a>
+            <span class="dropdownn"onmouseleave="hide()" onmousemove="show()">
+              <a class="befor">Content</a>
+              <div class="dropdownn-menu">
+                  <a href="Contents/movies/Actions/Actions.html">Action</a>
+                  <a href="Contents/movies/Comdey/Comdey.html">Comedy</a>
+                  <a href="Contents/movies/Drama/Drama.html">Drama</a>
+                  <a href="Contents/movies/Horror/Horror.html">Horror</a>
+                  <a href="Contents/movies/Fantasy/Fantasy.html">Fantasy</a>
+                  <a href="Contents/movies/Romance/Romance.html">Romance</a>
+              </div>
+              </span>
+            <a><button id="move" class="move" onclick="scrollWin()">Services</button></a>
+            <a href="">Blog</a>
+            <a><button  onclick="scrollWin2()">Contact US</button></a>
+            <a href="">About</a>
+            <a href="Account.html">Signin</a>
+        </div>
+          </span>
+        <nav>
+            <a href="index.html">Home</a>
+            <span class="dropdown">
+            <a href="">Content</a>
+            <div class="dropdown-menu">
+                <a href="Contents/movies/Actions/Actions.html">Action</a>
+                <a href="Contents/movies/Comdey/Comdey.html">Comedy</a>
+                <a href="Contents/movies/Drama/Drama.html">Drama</a>
+                <a href="Contents/movies/Horror/Horror.html">Horror</a>
+                <a href="Contents/movies/Fantasy/Fantasy.html">Fantasy</a>
+                <a href="Contents/movies/Romance/Romance.html">Romance</a>
+            </div>
+            </span>
+            <a href="#service">Services</a>
+            <a href="">Blog</a>
+            <a href="#ContactUS">Contact Us</a>
+            <a href="">About</a>
+            <button style="margin-right: 20px;" class="btnLogin-popup Signin" class="active">Login</button>
+        </nav>
+</header>
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close-outline"></ion-icon>    </span>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" name="ee" id="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" id="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forget">
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn" id="login_btn" onclick="login()">Login</button>
+            <div class="login-register">
+                <p>Don't have an acoount?
+                <a href="#" class="register-link">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <div class="form-box register">
+        <!-- <button type="submit" id="otb-btn" class="btn">Register</button> -->
+        <h2>Register</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>               
+                 </span>
+                <input type="text" name="otpuser" id="username" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" name="otpcode" id="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" name="otbpass" id="password" required>
+                <label>Password</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" name="confpass" required>
+                <label>Confirm Password</label>
+            </div>
+            <div class="remember-forget">
+                <label>
+                    <input type="checkbox">
+                    I agree the terms & conditions
+                </label>
+            </div>
+            <button type="submit" id="register_btn" class="btn">Register</button>
+            <div class="login-register">
+                <p>Already have an acoount?
+                <a href="#" class="login-link">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <div class="form-box otp">
+        <h2>OTP Verification</h2>
+        <div id="otp">
+            <p id="otpmessage">We've sent vertification code to your email : </p>
+        </div>
+        <br><br>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="codetest" required>
+                <label>Enter verification code</label>
+            </div>
+            <!-- <button onclick="sub()">wsws</button> -->
+        </form>
+        <!-- <button class="btn"onclick="sub()" >Submit</button> -->
+        <button class="btn" id="opt_code">Submit</button>
+    </div>
+</div>
+</script><script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="assests/js/Account.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</script>
+</body>
+</html>
